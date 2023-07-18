@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Coolvetica';
+    src: url(fonts/coolvetica-rg.woff) format('woff');
+  }
+
+:root {
+    --primary-color: #0a2ff1;
+    --secondary-color: #04146c;
+    --box-bg-color: #eff2ff;
+
+    --font-family: 'Roboto', sans-serif;
+
+    --h1-size: 7.5rem;
+    --h2-size: 1.87rem;
+    --text-size: 1.5rem;
+}
+html{
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+header{
+    width: 100%;
+    padding: 2rem 0;
+}
+header .container{
+    width: 95%;
+    margin: auto;
+}
+.container .title{
+    font-size: var(--h1-size);
+    font-family: 'Coolvetica', sans-serif;
+    color: var(--primary-color);
+}
+main{
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+main .box{
+    width: 22%;
+    height: 16rem;
+    padding: 1rem;
+    background-color: var(--box-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main .box img{
+    width: 25%;
+    margin-bottom: 1rem;
+}
+main .box .apple-logo{
+    width: 18%;
+}
+main .box .subtitle{
+    font-size: var(--h2-size);
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+main .box .text{
+    font-size: var(--text-size);
+    color: var(--secondary-color);
+
+}
