@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Desafio 5 - Ejercicio 1</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="img/M5-logo-azul.svg" alt="">
+            </a>
+            <div class="links">
+                <a href="#" class="active">HOME</a>
+                <a href="#">CONTACTO</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <p class="title">¿Querés que nos contactemos con vos?</h1>
+            <p class="subtitle">Dejanos tu consulta: </p>
+            <form action="">
+                <div class="item">
+                    <label for="name">Nombre completo <span class="required">*</span></label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="item">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="item">
+                    <label for="message">Comentario <span class="required">*</span></label>
+                    <textarea name="message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="buttons">
+                    <button type="reset" class="btn reset-btn">Resetear</button>
+                    <button type="submit" class="btn submit-btn">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </header>
+</body>
+</html>

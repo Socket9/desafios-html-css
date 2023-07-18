@@ -1,0 +1,56 @@
+/* ALGUNAS COSAS FUERON CAMBIADAS Y REALIZADAS A MI MODO, SI HAY QUE CORREGIR O MODIFICAR ALGO HACERMELO SABER */
+:root {
+    --primary-color: #04146c;
+    --secondary-color: #0a2ff1;
+
+    --font-family: 'Mulish', sans-serif;
+
+    --h1-size: 2.34rem;
+    --h2-size: 1.35rem;
+    --p-size: 1.25rem;
+}
+html{
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 50rem;
+    padding: 3rem;
+    height: auto;
+}
+.title{
+    color: var(--primary-color);
+    font-size: var(--h1-size);
+    margin-bottom: 1.8rem;
+    font-weight: 900;
+}
+.icon-text{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.icon-text .icon img{
+    width: 3.44rem;
+}
+.icon-text .text .subtitle{
+    font-size: var(--h2-size);
+    color: var(--secondary-color);
+    line-height: 3.44rem;
+    font-weight: 600;
+}
+.icon-text .text p{
+    font-size: var(--p-size);
+    color: var(--primary-color);
+}

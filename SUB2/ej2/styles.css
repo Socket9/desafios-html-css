@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #15163d;
+    --secondary-color: #04146c;
+    --tertiary-color: #414166;
+    --alternative-color: #4f95b6;
+
+    --font-family: 'Mulish', sans-serif;
+
+    --title-size: 2.2rem;
+    --text-size: 1.1rem;
+}
+html{
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: var(--container-width);
+    height: var(--container-height);
+    border: 2px solid var(--tertiary-color);
+    border-radius: .8rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .title{
+    font-size: var(--title-size);
+    margin-bottom: .5rem;
+    color: var(--primary-color);
+}
+.container .separator{
+    border: none;
+    width: 5rem;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+.form-item input{
+    width: 100%;
+    height: 3rem;
+    font-size: var(--text-size);
+    color: var(--tertiary-color);
+    border: 1px solid var(--tertiary-color);
+    padding-left: .7rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    outline: none;
+}
+.form-item input:focus{
+    border: 1px solid var(--alternative-color);
+}
+form button{
+    font-family: var(--font-family);
+    font-size: var(--text-size);
+    background-color: var(--primary-color);
+    color: #ffffff;
+    width: 31.25rem;
+    height: 3.125rem;
+    border: 2px solid transparent;
+    transition: .3s all;
+}
+form button:hover{
+    background-color: var(--tertiary-color);
+}

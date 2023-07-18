@@ -1,0 +1,1 @@
+Se realizó un script sencillo de PHP para mostrar el resultado en el ej2, de cualquier manera probablemente tenga errores porque no conozco mucho sobre PHP

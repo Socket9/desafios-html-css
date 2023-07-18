@@ -1,0 +1,75 @@
+/* SE RESPETARON LOS TAMAÑOS DEL ENUNCIADO PERO NO QUEDA LA IMAGEN COMPLETA DENTRO DE LA PANTALLA DEBITO A ESOS TAMAÑOS */ 
+:root {
+    --primary-color: #0a2ff1;
+    --secondary-color: #04146c;
+
+    --font-family: 'Roboto', sans-serif;
+
+    --h1-size: 6rem;
+    --menu-size: 1.5rem;
+    --p-size: 2.17rem;
+}
+html{
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+/* NAV BAR */
+
+nav{
+    width: 100%;
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+}
+nav .container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+nav .container img{
+    width: 8rem;
+}
+nav .container .links{
+    display: flex;
+    gap: 4rem;
+}
+.container .links a{
+    font-size: var(--menu-size);
+    text-decoration: none;
+    color: var(--secondary-color);
+    letter-spacing: 1px;
+}
+.active{
+    font-weight: 700;
+}
+
+/* HEADER*/
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: var(--h1-size);
+    margin-bottom: 1.8rem;
+}
+.text{
+    font-size: var(--p-size);
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+header img{
+    width: 100%;
+}

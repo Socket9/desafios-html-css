@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #15163d;
+    --secondary-color: #04146c;
+    --tertiary-color: #414166;
+
+    --font-family: 'Mulish', sans-serif;
+
+    --form-width: 37.5rem;
+    --form-height: 25rem;
+
+    --title-size: 2.04rem;
+    --text-size: 1.41rem;
+}
+html{
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background: url(img/M4-desafio1-fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color:var(--primary-color) ;
+    width: 50%;   
+    height: 28.125rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .form-img{
+    width: 6rem;
+    position: absolute;
+    right: 0;
+    bottom:0;
+}
+form{
+    width: var(--form-width);
+    height: var(--form-height);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.25rem;
+    position: relative;
+    z-index: 2;
+}
+form .title{
+    font-size: var(--title-size);
+    margin: 2rem 0 1rem 0;
+    font-weight: 700;
+    font-family: var(--font-family);
+}
+.form-item input{
+    width: 31.25rem;
+    height: 3.125rem;
+    font-size: var(--text-size);
+    color: var(--tertiary-color);
+    border: 1px solid var(--tertiary-color);
+    padding-left: .7rem;
+    margin-bottom: 1rem;
+    outline: none;
+}
+form button{
+    font-family: var(--font-family);
+    font-size: var(--text-size);
+    background-color: var(--primary-color);
+    color: #ffffff;
+    width: 31.25rem;
+    height: 3.125rem;
+    border: 2px solid transparent;
+}
