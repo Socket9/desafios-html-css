@@ -1,3 +1,8 @@
+/* 
+SE MODIFICARON LOS TAMAÑOS DE FUENTE UN POCO PARA QUE QUEDE MÁS PARECIDO A LA IMAGEN DE REFERENCIA,
+NO SE HABÍA INCLUIDO EL ".img-container" EN EL PRIMER COMMIT DEBIDO A QUE EN EL ENUNCIADO NO MUESTRA ESA PARTE, SOLO EL TEXTO.
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap');
 :root {
     --primary-color: #0a2ff1;
@@ -5,10 +10,10 @@
 
     --font-family: 'Mulish', sans-serif;
 
-    --title-size: 5rem;
-    --subtitle-size: 2.5rem;
-    --text-size: 1.66rem;
-    --btn-size: 1.83rem;
+    --title-size: 4rem;
+    --subtitle-size: 2rem;
+    --text-size: 1.4rem;
+    --btn-size: 1.5rem;
 }
 html{
     font-size: 16px;
@@ -24,10 +29,11 @@ main{
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 .container{
-    width: 90%;
-    margin: 0 auto;
+    width: 47%;
 }
 .container .subtitle{
     font-size: var(--subtitle-size);
@@ -57,4 +63,24 @@ main{
     text-decoration: none;
     font-size: var(--btn-size);
     font-weight: 700;
+}
+.img-container{
+    width: 47%;
+    height: 100vh;
+    position: relative;
+}
+.img-container .img {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 21rem;
+    border: 5px solid var(--primary-color);
+    z-index: 2;
+}
+.img-container .img-bg{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
 }
