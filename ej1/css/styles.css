@@ -1,0 +1,48 @@
+:root {
+    --font-family: 'Mulish', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    padding: 3rem 0;
+}
+.title{
+    color: #3957f1;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.box {
+    width: 300px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .7);
+    
+}
+.box img{
+    width: 100%;
+}
+.text-container h2{
+    color: #15163d;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    text-align: center;
+    margin: 0;
+}
