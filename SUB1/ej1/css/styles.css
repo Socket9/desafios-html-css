@@ -1,0 +1,81 @@
+/* SE MODIFICARON ALGUNOS TAMAÑOS PARA LOGAR EL RESULTADO PARECIDO A LA REFERENCIA */
+
+:root {
+    --primary-color: #04146c;
+    --secondary-color: #0a2ff1;
+
+    --font-family: 'Mulish', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    padding: 3rem 0;
+}
+.title{
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.box{
+    width: 300px;
+    height: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.box img{
+    width: 60%;
+    margin-bottom: 1.2rem;
+}
+.box .text-container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--primary-color);
+}
+.text-container h2{
+    color: var(--secondary-color) !important; 
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5rem;
+}
+.text-container span{
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.text-container p{
+    font-size: 1.1rem;
+}
+.text-container a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+.text-container .btn-ulises{
+    margin-top: 1.6rem;
+}

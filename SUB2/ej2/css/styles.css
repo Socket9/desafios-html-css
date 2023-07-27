@@ -1,0 +1,128 @@
+/* TANTO LA ADAPTACIÓN DE LA IMAGEN EN LAS DISTINTAS RESOLUCIONES COMO EL ALINEAMIENTO
+HORIZONTAL DEL H1 Y LOS BOTONES SE REALIZARON CON MEDIA QUERYSDEBIDO A QUE ME PARECÍA
+MÁS SENCILLO Y CUSTOMIZABLE. ALGUNOS TAMAÑOS FUERON MODIFICADOS.*/
+
+:root{
+    --primary-color: #04146c;
+    --secondary-color: #0a2ff1;
+    --white: #f1f1f1;
+
+    --title-size: 5.125rem;
+    --text-size: 1.3rem;
+    --btn-size: 1.16rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-container{
+    width: 50%;
+}
+.img-container img{
+    width: 80%;
+}
+.text-container{
+    width: 50%;
+    color: var(--primary-color);
+}
+.text-container > h1{
+    font-size: var(--title-size);
+    font-weight: 900;
+}
+.text-container > p{
+    font-size: var(--text-size);
+    margin-bottom: 2.5rem;
+}
+.buttons button{
+    width: 150px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: #f1f1f1;
+    border: none;
+    font-variant: small-caps;
+    font-size: var(--btn-size);
+}
+
+@media(max-width:768px){
+
+    main{
+        padding: 2rem 0;
+        height: auto;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .img-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .img-container img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .text-container{
+        width: 100%;
+    }
+    .text-container h1,.buttons{
+        text-align: center;
+    }
+    
+}
+
+@media(max-width:576px){
+
+    main{
+        padding: 1rem 0;
+        height: auto;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .img-container{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    .img-container img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .text-container{
+        width: 80%;
+    }
+    .text-container h1{
+        font-size: 3rem;
+    }
+    .text-container p{
+        font-size: 1.1rem;
+    }
+    .buttons button{
+        width: 120px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    .text-container h1,.buttons{
+        text-align: center;
+    }
+    
+}
